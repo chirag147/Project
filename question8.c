@@ -11,7 +11,7 @@ struct Student
 	char student_name[10];
 	int student_time;
 }s[20];	
-void main()
+int main()
 {   
     int i,f1,s1,t1=0,t2=60;
   
@@ -21,7 +21,7 @@ void main()
 	{
 		printf("Enter name of faculty%d: ",i);
 		scanf("%s",&f[i].faculty_name);
-		printf("Enter time for faculty %d:		
+		printf("Enter time for faculty %d:",i);		
 		scanf("%d",&f[i].facluty_time);
 		printf("\n");
 	}
@@ -34,7 +34,7 @@ void main()
 	{
 		printf("Enter name of student%d: ",i);
 		scanf("%s",&s[i].student_name);
-		printf("Enter time for Student %d: "
+		printf("Enter time for Student %d: ",i);
 		scanf("%d",&s[i].student_time);
 		printf("\n");
 	}
